@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Projeto Final</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="container mb-5">
+      <h3 class="py-3">Projeto Final JS</h3>
+
+      <h5>Lista de Exercícios</h5>
+
+      <ul class="list-group">
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-top rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio1Modal">
+            <span class="btn-text">Exercício 1 - <span class="text-muted">Dobro de um número</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio2Modal">
+            <span class="btn-text">Exercício 2 - <span class="text-muted">Valor do jantar</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio3Modal">
+            <span class="btn-text">Exercício 3 - <span class="text-muted">Converção de dias para horas</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio4Modal">
+            <span class="btn-text">Exercício 4 - <span class="text-muted">Converção de idade para horas</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio5Modal">
+            <span class="btn-text">Exercício 5 - <span class="text-muted">Média de duas notas</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio6Modal">
+            <span class="btn-text">Exercício 6 - <span class="text-muted">IMC</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio7Modal">
+            <span class="btn-text">Exercício 7 - <span class="text-muted">Número antecessor</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio8Modal">
+            <span class="btn-text">Exercício 8 - <span class="text-muted">Área do retângulo</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio9Modal">
+            <span class="btn-text">Exercício 9 - <span class="text-muted">Conversão de idade (anos, meses, dias) para
+                horas</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio10Modal">
+            <span class="btn-text">Exercício 10 - <span class="text-muted">Porcentagem de votos</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio11Modal">
+            <span class="btn-text">Exercício 11 - <span class="text-muted">Reajuste de salário</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio12Modal">
+            <span class="btn-text">Exercício 12 - <span class="text-muted">Custo final de um carro</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio13Modal">
+            <span class="btn-text">Exercício 13 - <span class="text-muted">Salário do funcionário da revendedora de
+                carros</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio14Modal">
+            <span class="btn-text">Exercício 14 - <span class="text-muted">Par ou ímpar</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-bottom rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio15Modal">
+            <span class="btn-text">Exercício 15 - <span class="text-muted">Maior que 100</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-bottom rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio16Modal">
+            <span class="btn-text">Exercício 16 - <span class="text-muted">Peso ideal</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+        <li class="list-group-item p-0">
+          <button type="button" class="btn btn-light rounded-bottom rounded-0 w-100 d-flex justify-content-between"
+            data-bs-toggle="modal" data-bs-target="#exercicio17Modal">
+            <span class="btn-text">Exercício 17 - <span class="text-muted">Tabuada</span></span>
+            <img src="icons/chevron-right.svg" alt="chevron-right">
+          </button>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Exercicio 1 Modal - Start -->
+  <div class="modal fade" id="exercicio1Modal" tabindex="-1" aria-labelledby="exercicio1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular o dobro de um número.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex1Form">
+            <div>
+              <label for="ex1NumeroInput" class="form-label">Número</label>
+              <input id="ex1NumeroInput" name="ex1Numero" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex1ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio1()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 1 Modal - End -->
+
+  <!-- Exercicio 2 Modal - Start -->
+  <div class="modal fade" id="exercicio2Modal" tabindex="-1" aria-labelledby="exercicio2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 2</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular o valor total do jantar, incluindo a taxa do garçom.</span>
+            <br>
+            <span>Valor Total = Valor Jantar + Taxa 10% Garçom</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex2Form">
+            <div>
+              <label for="ex2ValorJantarInput" class="form-label">Valor do Jantar</label>
+              <input id="ex2ValorJantarInput" name="ex2ValorJantar" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex2ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio2()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 2 Modal - End -->
+
+  <!-- Exercicio 3 Modal - Start -->
+  <div class="modal fade" id="exercicio3Modal" tabindex="-1" aria-labelledby="exercicio3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 3</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Converter uma quantidade de dias para a quantidade de horas correspondentes.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex3Form">
+            <div>
+              <label for="ex3QtdDiasInput" class="form-label">Quantidade de Dias</label>
+              <input id="ex3QtdDiasInput" name="ex3QtdDias" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex3ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio3()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 3 Modal - End -->
+
+  <!-- Exercicio 4 Modal - Start -->
+  <div class="modal fade" id="exercicio4Modal" tabindex="-1" aria-labelledby="exercicio4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 4</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Converter a idade de uma pessoa para a quantidade de horas correspondentes.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex4Form">
+            <div>
+              <label for="ex4IdadeInput" class="form-label">Idade</label>
+              <input id="ex4IdadeInput" name="ex4Idade" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex4ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio4()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 4 Modal - End -->
+
+  <!-- Exercicio 5 Modal - Start -->
+  <div class="modal fade" id="exercicio5Modal" tabindex="-1" aria-labelledby="exercicio5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 5</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular a média de duas notas.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex5Form">
+            <div class="mb-3">
+              <label for="ex5Nota1Input" class="form-label">Nota 1</label>
+              <input id="ex5Nota1Input" name="ex5Nota1" type="text" class="form-control">
+            </div>
+            <div>
+              <label for="ex5Nota2Input" class="form-label">Nota 2</label>
+              <input id="ex5Nota2Input" name="ex5Nota2" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex5ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio5()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 5 Modal - End -->
+
+  <!-- Exercicio 6 Modal - Start -->
+  <div class="modal fade" id="exercicio6Modal" tabindex="-1" aria-labelledby="exercicio6ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 6</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular IMC.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex6Form">
+            <div class="mb-3">
+              <label for="ex6AlturaInput" class="form-label">Altura (m)</label>
+              <input id="ex6AlturaInput" name="ex6Altura" type="text" class="form-control">
+            </div>
+            <div>
+              <label for="ex6PesoInput" class="form-label">Peso (kg)</label>
+              <input id="ex6PesoInput" name="ex6Peso" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex6ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio6()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 6 Modal - End -->
+
+  <!-- Exercicio 7 Modal - Start -->
+  <div class="modal fade" id="exercicio7Modal" tabindex="-1" aria-labelledby="exercicio7ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 7</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Achar o número antecessor de um determinado número.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex7Form">
+            <div class="mb-3">
+              <label for="ex7NumeroInput" class="form-label">Número</label>
+              <input id="ex7NumeroInput" name="ex7Numero" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex7ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio7()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 7 Modal - End -->
+
+  <!-- Exercicio 8 Modal - Start -->
+  <div class="modal fade" id="exercicio8Modal" tabindex="-1" aria-labelledby="exercicio8ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 8</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular a área do retângulo.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex8Form">
+            <div class="mb-3">
+              <label for="ex8BaseInput" class="form-label">Base</label>
+              <input id="ex8BaseInput" name="ex8Base" type="text" class="form-control">
+            </div>
+            <div>
+              <label for="ex8AlturaInput" class="form-label">Altura</label>
+              <input id="ex8AlturaInput" name="ex8Altura" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex8ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio8()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 8 Modal - End -->
+
+  <!-- Exercicio 9 Modal - Start -->
+  <div class="modal fade" id="exercicio9Modal" tabindex="-1" aria-labelledby="exercicio9ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 9</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Converter a idade, incluindo anos, meses e dias, para a quantidade de horas correspondentes.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex9Form">
+            <div class="mb-3">
+              <label for="ex9AnosInput" class="form-label">Anos</label>
+              <input id="ex9AnosInput" name="ex9Anos" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="ex9MesesInput" class="form-label">Meses</label>
+              <input id="ex9MesesInput" name="ex9Meses" type="text" class="form-control">
+            </div>
+            <div>
+              <label for="ex9DiasInput" class="form-label">Dias</label>
+              <input id="ex9DiasInput" name="ex9Dias" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex9ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio9()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 9 Modal - End -->
+
+  <!-- Exercicio 10 Modal - Start -->
+  <div class="modal fade" id="exercicio10Modal" tabindex="-1" aria-labelledby="exercicio10ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 10</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular as porcentagens de votos brancos, nulos e válidos para uma determinada quantidade total de
+              eleitores.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex10Form">
+            <div class="mb-3">
+              <label for="ex10NumeroTotalEleitoresInput" class="form-label">Números total de eleitores</label>
+              <input id="ex10NumeroTotalEleitoresInput" name="ex10NumeroTotalEleitores" type="text"
+                class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="ex10NumeroVotosBrancosInput" class="form-label">Número de votos brancos</label>
+              <input id="ex10NumeroVotosBrancosInput" name="ex10NumeroVotosBrancos" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="ex10NumeroVotosNulosInput" class="form-label">Número de votos nulos</label>
+              <input id="ex10NumeroVotosNulosInput" name="ex10NumeroVotosNulos" type="text" class="form-control">
+            </div>
+            <div>
+              <label for="ex10NumeroVotosValidosInput" class="form-label">Número de votos válidos</label>
+              <input id="ex10NumeroVotosValidosInput" name="ex10NumeroVotosValidos" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex10ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio10()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 10 Modal - End -->
+
+  <!-- Exercicio 11 Modal - Start -->
+  <div class="modal fade" id="exercicio11Modal" tabindex="-1" aria-labelledby="exercicio11ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 11</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular o novo salário com base no percentual de reajuste.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex11Form">
+            <div class="mb-3">
+              <label for="ex11SalarioInput" class="form-label">Salário</label>
+              <input id="ex11SalarioInput" name="ex11Salario" type="text" class="form-control">
+            </div>
+            <div>
+              <label for="ex11PercentualReajusteInput" class="form-label">Percentual de reajuste (%)</label>
+              <input id="ex11PercentualReajusteInput" name="ex11PercentualReajuste" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex11ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio11()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 11 Modal - End -->
+
+  <!-- Exercicio 12 Modal - Start -->
+  <div class="modal fade" id="exercicio12Modal" tabindex="-1" aria-labelledby="exercicio12ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 12</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Calcular o custo final de um carro de acordo com seu custo de fábrica, percentual do distribuidor e os
+              impostos.</span>
+            <br>
+            <span>Percentual distribuidor: 28%</span>
+            <br>
+            <span>Percentual impostos: 45%</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex12Form">
+            <div class="mb-3">
+              <label for="ex12CustoFabricaInput" class="form-label">Custo fábrica</label>
+              <input id="ex12CustoFabricaInput" name="ex12CustoFabrica" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex12ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio12()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 12 Modal - End -->
+
+  <!-- Exercicio 13 Modal - Start -->
+  <div class="modal fade" id="exercicio13Modal" tabindex="-1" aria-labelledby="exercicio13ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 13</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo por mês,
+              mais uma comissão também fixa para cada carro vendido e mais 5% do valor das vendas por ele
+              efetuadas. Escrever um algoritmo que leia o número de carros por ele vendidos, o valor total de
+              suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcule e escreva o salário
+              final do vendedor.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex13Form">
+            <div class="mb-3">
+              <label for="ex13SalarioFixoInput" class="form-label">Salário Fixo</label>
+              <input id="ex13SalarioFixoInput" name="ex13SalarioFixo" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="ex13ValorComissaoInput" class="form-label">Valor da comissão para cada carro vendido</label>
+              <input id="ex13ValorComissaoInput" name="ex13ValorComissao" type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="ex13NumeroCarrosVendidosInput" class="form-label">Número de carros vendidos</label>
+              <input id="ex13NumeroCarrosVendidosInput" name="ex13NumeroCarrosVendidos" type="text"
+                class="form-control">
+            </div>
+            <div>
+              <label for="ex13ValorTotalVendasInput" class="form-label">Valor total de suas vendas</label>
+              <input id="ex13ValorTotalVendasInput" name="ex13ValorTotalVendas" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex13ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio13()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 13 Modal - End -->
+
+  <!-- Exercicio 14 Modal - Start -->
+  <div class="modal fade" id="exercicio14Modal" tabindex="-1" aria-labelledby="exercicio14ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 14</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Verificar se um número é par ou ímpar.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex14Form">
+            <div>
+              <label for="ex14NumeroInput" class="form-label">Número</label>
+              <input id="ex14NumeroInput" name="ex14Numero" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex14ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio14()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 14 Modal - End -->
+
+  <!-- Exercicio 15 Modal - Start -->
+  <div class="modal fade" id="exercicio15Modal" tabindex="-1" aria-labelledby="exercicio15ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 15</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Verificar se o número é maior que 100. Se sim, imprima o seu valor, caso contrário imprima 0.</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex15Form">
+            <div>
+              <label for="ex15NumeroInput" class="form-label">Número</label>
+              <input id="ex15NumeroInput" name="ex15Numero" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex15ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio15()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 15 Modal - End -->
+
+  <!-- Exercicio 16 Modal - Start -->
+  <div class="modal fade" id="exercicio16Modal" tabindex="-1" aria-labelledby="exercicio16ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 16</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu
+              peso ideal, utilizando as seguintes fórmulas:</span>
+            <br>
+            <span>Para homens: (72.7 * h) - 58</span>
+            <br>
+            <span>Para mulheres: (62.1 * h) - 44.7 (h = altura)</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex16Form">
+            <div class="mb-3">
+              <input id="ex16MasculinoRadio" name="ex16Sexo" type="radio" value="masculino" class="form-check-input" checked>
+              <label for="ex16MasculinoRadio" class="form-label">Masculino</label>
+              <span class="mx-2"></span>
+              <input id="ex16FemininoRadio" name="ex16Sexo" type="radio" value="feminino" class="form-check-input">
+              <label for="ex16FemininoRadio" class="form-label">Feminino</label>
+            </div>
+            <div>
+              <label for="ex16AlturaInput" class="form-label">Altura (m)</label>
+              <input id="ex16AlturaInput" name="ex16Altura" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex16ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio16()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 16 Modal - End -->
+
+  <!-- Exercicio 17 Modal - Start -->
+  <div class="modal fade" id="exercicio17Modal" tabindex="-1" aria-labelledby="exercicio17ModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Exercício 17</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <span class="fw-bold">Descrição do exercício:</span>
+            <br>
+            <span>Montar a tabuada do número entrado pelo usuário</span>
+          </div>
+          <br>
+
+          <!-- Form - Start -->
+          <form id="ex17Form">
+            <div>
+              <label for="ex17NumeroInput" class="form-label">Número</label>
+              <input id="ex17NumeroInput" name="ex17Numero" type="text" class="form-control">
+            </div>
+          </form>
+          <!-- Form - End -->
+          <br>
+
+          <div>
+            <span class="fw-bold">Resultado: </span>
+            <br>
+            <span id="ex17ResultadoSpan">Execute o programa para visualizar o resultado.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="executarExercicio17()">Executar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Exercicio 17 Modal - End -->
+
+  <!-- Bootstrap JS -->
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="lib/inputmasks/customMasks.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

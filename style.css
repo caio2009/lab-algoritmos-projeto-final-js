@@ -1,0 +1,4 @@
+li.list-group-item:hover .btn-text {
+  transform: translateX(15px);
+  transition: transform .4s;
+}
