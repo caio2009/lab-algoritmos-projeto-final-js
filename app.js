@@ -8,13 +8,30 @@ function getValuesFromForm(formId) {
   const controls = ['input', 'select'];
   controls.forEach(control => {
     form.querySelectorAll(control).forEach(controlEl => {
-      keys.push(controlEl.name);
+      const keyAlreadExists = keys.find(key => key === controlEl.name);
+      if (!keyAlreadExists) {
+        if (control === 'input') {
+          keys.push({
+            name: controlEl.name,
+            inputType: controlEl.type
+          });
+        } else {
+          keys.push({ 
+            name: controlEl.name,
+            inputType: null
+          });
+        }
+      }
     });
   });
 
-  keys.sort();
+  keys.sort((a, b) => a.name > b.name);
   keys.forEach(key => {
-    values[key] = document.querySelector(`[name=${key}]`).value;
+    if (key.inputType && key.inputType === 'radio') {
+      values[key.name] = document.querySelector(`[name=${key.name}]:checked`).value;
+    } else {
+      values[key.name] = document.querySelector(`[name=${key.name}]`).value;
+    }
   });
 
   return values;
@@ -308,7 +325,6 @@ function executarExercicio17() {
     resultadoSpanConteudo += `<span>${numero} * ${multiplicador} = ${numero * multiplicador}</span>`;
     if (index < multiplicadores.length - 1) resultadoSpanConteudo += '<br>';
   });
-  console.log(resultadoSpanConteudo);
 
   document.querySelector('#ex17ResultadoSpan').innerHTML = resultadoSpanConteudo;
 }
