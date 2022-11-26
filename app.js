@@ -1,4 +1,6 @@
-// --- Funcoes auxiliares ---
+/*
+ * Funcoes auxiliares
+ * ================================================================================ */
 
 function getValuesFromForm(formId) {
   const values = {};
@@ -123,8 +125,9 @@ function initInputsMask() {
   customMasks.onlyDigits([document.querySelector('#ex17NumeroInput')]);
 }
 
-
-// --- Implementacao dos exercicios ---
+/*
+ * Implementacao dos exercicios
+ * ================================================================================ */
 
 function executarExercicio1() {
   const values = getValuesFromForm('ex1Form');
@@ -329,7 +332,7 @@ function executarExercicio17() {
   document.querySelector('#ex17ResultadoSpan').innerHTML = resultadoSpanConteudo;
 }
 
-// ---
+// ================================================================================
 
 initFormsConfig();
 initInputsMask();
