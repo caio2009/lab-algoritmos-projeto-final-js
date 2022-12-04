@@ -2,6 +2,12 @@
  * Funcoes auxiliares
  * ================================================================================ */
 
+/**
+ * Retrieves the values of inputs from a specific form.
+ *
+ * @param {string} formId - the id of the form.
+ * @returns {object} - the object containing the values.
+ */
 function getValuesFromForm(formId) {
   const values = {};
   const keys = [];
