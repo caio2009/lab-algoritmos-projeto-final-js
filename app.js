@@ -14,9 +14,11 @@ function getValuesFromForm(formId) {
 
   const form = document.querySelector(`#${formId}`);
   const controls = ['input', 'select'];
+
   controls.forEach(control => {
     form.querySelectorAll(control).forEach(controlEl => {
       const keyAlreadExists = keys.find(key => key === controlEl.name);
+
       if (!keyAlreadExists) {
         if (control === 'input') {
           keys.push({
